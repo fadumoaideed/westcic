@@ -1,0 +1,370 @@
+@import url('https://gots.googleapis.com/css?family=Poppins:400,500,700');
+
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins'. sans-serif;
+    color: #000000;
+    
+}
+
+.navbar
+{
+    padding: .1rem;  /*--(1 rem or em is 16px)--*/
+}
+
+.navbar-nab li
+{
+    padding-right: 20px;
+}
+
+.nav-link
+{
+    font-size: 1.8em !important;
+}
+
+.img-fluid img
+{
+    width: 100% \9;
+    height: 100%;
+}
+
+.img-fluid2 img
+{
+    width: 100% \9;
+    height: 100%;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 90%;
+  max-height: auto;
+}
+
+.circle {
+  stroke: #4CC790;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+.padding
+{
+    padding-bottom: 2rem;
+}
+
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}
+.welcome
+{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.welcome hr
+{
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;       
+}
+
+.highlight
+{
+    font-weight: bold;
+    color: #84B59F;
+}
+
+.highlighthead
+{
+
+    color: #205c4c;
+   
+    text-underline-position: auto;
+}
+
+.social a
+{
+    font-size: 4rem;
+    padding: 4rem;
+}
+
+.fa-facebook
+{
+    color: #3b5998;
+}
+
+.fa-twitter
+{
+    color: #1DA1F2;
+}
+
+.fa-linkedin
+{
+    color: #0e76a8;
+}
+
+.fa-facebook hover, .fa-twitter hover, .fa-linkedin hover
+{
+    color@ #FFFFFF;
+}
+
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 1px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 15px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} 
+
+footer
+{
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 0.2rem;
+}
+
+hr.light
+{
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+footer a
+{
+    color: #e5e5e5;
+}
+
+hr.light-100
+{
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+p
+    {
+        font-size: 30px;
+    }
+    
+/*---Media Queries ------------------------------*/
+@media (max-width: 992px)
+{
+
+    
+.social a
+    {
+        font-size: 3em;
+        padding: 2rem;
+    }
+    
+p
+    {
+        font-size: 20px;
+    }
+    
+.display-3
+    {
+        font-size: 50px;
+    }
+}
+@media (max-width: 768px)
+    {
+    
+.display-4
+    {
+    font-size: 200%;
+    }
+.social a
+    {
+    font-size: 2.5em;
+    padding: 1.2rem;
+    }
+p
+    {
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width: 576px)
+{
+ .nav-brand img 
+    {
+    max-height: 10px;    
+    }
+    
+   .img-fluid
+    {
+    width: 100%;
+    height: 25%; 
+    }
+    
+    .img-fluid2 img
+{
+    width: 100% \9;
+    height: 100%;
+}
+    p
+    {
+        font-size: 15px;
+    }
+     
+.display-4
+    {
+        font-size:160%;
+    }
+.social a
+    {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    p
+    {
+        font-size: 15px;
+    }
+}
+
+
+
+/*--Fixed background image --*/
+figure
+{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0!important;
+}
+.fixed-wrap
+{
+    clip: rect(0,auto,auto,0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#fixed
+{
+    background-image: url('img/slide1.png');
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-position: center,center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+}
+
+
+
+/*--Bootstrap padding fix --*/
+[class*="col-"]
+{
+    padding: 1rem;
+}
+
+/*
+Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first 
+front-end web development. It contains CSS- and (optionally) JavaScript-based design 
+templates for typography, forms, buttons, navigation, and other interface components.
+
+breakpoints in Bootstrap
+
+Extra small (xs) devices (portait pphones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape hones, 576px and up)
+@media (min-width: 576px) {....}
+
+Medium (md) devices (tablets. 768px and up)
+@media (min-width: 768px {...})
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px {...})
+
+Extra Large (xl) devices (large desktops, 1200px and up)
+@media (min-width: 1200px {...})
+
+*/
+
