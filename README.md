@@ -7,7 +7,7 @@ We are a community interest company founded by STEM (Science, Technology, Engine
 
 ## Live Project
 
-www.westcic.com
+chttps://www.westcic.com
 
 ## Getting Started
 
